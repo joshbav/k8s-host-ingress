@@ -2,8 +2,8 @@
 
 This tutorial will show how to do host based routing using the Traefik ingress controller. This was referred to as the cheese demo when we were onsite. This demo assumes there is only 1 K8s public node. It is simplified to route to a single deployment based on its host header. 
 
-Here’s the 
-[Traefik docs] (https://docs.traefik.io/basics/)
+Here’s the
+[Traefik docs](https://docs.traefik.io/basics/)
 which explain the Traefik architecture. Ignore everything beyond the Entrypoints section since it’s not for a Kubernetes configuration. 
 
 Incoming requests end on entrypoints, as the name suggests, they are the network entry points into Traefik (front side listening port, SSL, traffic redirection, etc).
