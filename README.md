@@ -1,7 +1,7 @@
 ### HOST HEADER INGRESS ROUTING TUTORIAL 
 Revision 10-26-18
 
-This tutorial will show how to do host based routing using the Traefik ingress controller. This was referred to as the cheese demo when we were onsite. This demo assumes there is only 1 K8s public node. It is simplified to route to a single deployment based on its host header. 
+This tutorial will show how to do host based routing using the Traefik ingress controller. This demo assumes there is only 1 K8s public node. It is simplified to route to a single deployment based on its host header. 
 
 Here’s the
 [Traefik docs](https://docs.traefik.io/basics/)
@@ -24,7 +24,7 @@ To bypass DNS, edit your /etc/hosts file, add the following entries:
 `<K8s public node IP>  www.nginx.test`   
 `<same K8s public node IP> www.apache.test`
 
-Host headers will now be sent when we browse to those addresses. Traefik will use those host headers to route to the proper backend.
+Host headers will now be sent when we browse to those DNS FQDNs. Traefik will then use those host headers to route to the proper backend.
 
 #### Install traefik
 
