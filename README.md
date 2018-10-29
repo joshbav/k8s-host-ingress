@@ -40,10 +40,10 @@ Host headers will now be sent when we browse to those DNS FQDNs. Traefik will th
 
 #### Browser test
 
-Wait 30 seconds, most of this is the container pull from dockerhub
+Wait 30 seconds, most of this is the container pull from Docker Hub.
 
 Open browser to www.nginx.test
-Should show default NGINX page
+Should show default NGINX page.
 
 Open browser to www.apache.test
 It should show default Apache page (“it works”).
@@ -54,7 +54,6 @@ It should show default Apache page (“it works”).
 kubectl delete -f https://raw.githubusercontent.com/joshbav/dcos-demo1/master/nginx.yaml
 kubectl delete -f https://raw.githubusercontent.com/joshbav/dcos-demo1/master/traefik.yaml`
 
-Note how the Ingress controller was removed last. Essentially the kubectl deletes need to be the reverse of the creates. Note how all Traefik objects are in a single yaml file, same with NGINX and Apache. This is an example of how to move deployments between clusters. It also simplifies development when it’s try/fail/try again. The ordering of the yaml objects in the single file is important, if A references B, then B should be above A in the file 
+#### Remove the entries from your /etc/hosts file
 
-#### Remove entries from your /etc/hosts file
-
+Simply delete the two entries that were added earlier.
