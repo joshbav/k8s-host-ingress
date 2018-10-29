@@ -1,4 +1,5 @@
 ### HOST HEADER INGRESS ROUTING TUTORIAL 
+Revision 10-26-18
 
 This tutorial will show how to do host based routing using the Traefik ingress controller. This was referred to as the cheese demo when we were onsite. This demo assumes there is only 1 K8s public node. It is simplified to route to a single deployment based on its host header. 
 
