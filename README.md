@@ -13,7 +13,9 @@ Traffic is then forwarded to a matching frontend. A frontend defines routes from
 
 The frontend will then send the request to a backend. A backend can be composed by one or more servers, and by a load-balancing strategy.
 
-Here’s the Traefik docs for Kubernetes for the full cheese demo. The demo here is a simplified version of this since it’s an ideal starting point. We will have NGINX and Apache as our two apps, accessed via two host headers. You can use these examples as a simple template. 
+Here’s the 
+[Traefik docs](https://docs.traefik.io/user-guide/kubernetes/)
+for Kubernetes for the full cheese demo. The demo here is a simplified version of this since it’s an ideal starting point. We will have NGINX and Apache as our two apps, accessed via two host headers. You can use these examples as a simple template (however more settings are needed for production). 
 
 #### Edit /etc/hosts to bypass DNS
 
